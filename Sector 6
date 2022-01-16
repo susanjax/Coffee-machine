@@ -1,3 +1,29 @@
+Methods:  Drive
+Car.drive(my_car)
+my_car.drive()
+
+Methods  Open door policy
+door.open_door()
+
+Methods  Mountain high
+class Mountain:
+    def __init__(self, name, height):
+        self.name = name
+        self.height = height
+
+    # create convert_height here
+    def convert_height(self):
+        return self.height / 0.3048
+
+Methods  Dog
+bark
+sleep
+
+Methods  Batman
+# create a Batman here
+hero = Batman()
+hero.intimidate_villain()
+
 Method: Point
 class Point:
     def __init__(self, x, y):
@@ -8,3 +34,43 @@ class Point:
 
     def dist(self, p2):
         return ((p2.x - self.x) ** 2 + (p2.y - self.y) ** 2) ** 0.5
+       
+       
+Method: Greeting
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hello, I am {}!".format(self.name))
+
+character_name = Person(input())
+character_name.greet()
+
+Method: Hexagon
+import math
+class Hexagon:
+    def __init__(self, side_length):
+        self.side_length = side_length
+
+    def get_area(self):
+        area = ((3 * math.sqrt(3) * (self.side_length * self.side_length)) / 2)
+        return "{:.3f}".format(area)
+        
+        
+Method: Keep on sailing
+# our class Ship
+class Ship:
+    def __init__(self, name, country):
+        self.name = name
+        self.country = country
+        self.cargo = 0
+
+    # the old sail method that you need to rewrite
+    def sail(self):
+        print(f"The {self.name} has sailed for {self.country}!")
+
+nation = input()
+black_pearl = Ship("Black Pearl", nation)
+black_pearl.sail()
+

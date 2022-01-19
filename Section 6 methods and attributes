@@ -1,0 +1,55 @@
+I have friends 
+class User:
+    def __init__(self, username):
+        self.username = username
+        self.friends = 0
+
+    # fix this method
+    def add_friends(self, n):
+        self.friends += n
+        print("{} now has {} friends.".format(self.username, self.friends))
+
+Turtle
+(6, 4)
+
+BFF 
+Jess
+
+Paint
+class House:
+    def __init__(self, floors):
+        self.floors = floors
+
+    # create the method here
+    def paint(self, color):
+        self.color = color
+        
+Piggy bank
+class PiggyBank:
+    # create __init__ and add_money methods
+    def __init__(self, dollars, cents):
+        self.dollars = dollars
+        self.cents = cents
+        
+    
+    def add_money(self, deposit_dollars, deposit_cents):
+        total = (self.dollars * 100) + self.cents + (deposit_dollars * 100) + deposit_cents
+        self.cents = total % 100
+        self.dollars = total // 100
+
+light bulb
+class Lightbulb:
+    def __init__(self):
+        self.state = "off"
+
+    # create method change_state here
+    def change_state(self):
+        if self.state == "off":
+            self.state = "on"
+            print("Turning the light on")
+    
+        else:
+            self.state = "off"
+            print("Turning the light off")
+
+        
